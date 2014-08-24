@@ -40,13 +40,11 @@ public enum Pieces {
     //Position is the top left corner
     private Point position;
     private ShapeRenderer shapeRenderer;
-    private long moveTimer;
 
     private Pieces(boolean[][] shape) {
         this.piece = shape;
         position = new Point(0,0);
         shapeRenderer = new ShapeRenderer();
-        moveTimer = System.currentTimeMillis();
     }
 
     public static Pieces getRandomPiece(Point startPos) {
